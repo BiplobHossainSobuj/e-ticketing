@@ -11,16 +11,17 @@
     <script src="https://kit.fontawesome.com/dbad7c3c7c.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                primary: '#030712',
-                secondary:'#03071299'
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#030712',
+                        secondary: '#03071299',
+                        beautify: '#1DD100'
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
 
 <body>
@@ -56,10 +57,23 @@
                         </ul>
                     </div>
                     <div class="navbar-end">
-                        <a class="btn btn-outline btn-warning font-bold text-xl">Bus<i class="fa-solid fa-van-shuttle"></i></a>
+                        <a class="btn btn-outline btn-warning font-bold text-xl">Bus<i
+                                class="fa-solid fa-van-shuttle"></i></a>
                     </div>
                 </div>
             </nav>
+            <!-- top banner  -->
+            <div class="hero min-h-[650px] my-10 rounded-xl bg-cover" style="background-image: url(images/banner.png);">
+                <div class="hero-content text-center text-neutral-content">
+                    <div>
+                        <h1 class="text-6xl text-white font-bold">End-to-End Travel with <br>
+                             <span class="text-beautify">P Paribahan</span>
+                        </h1>
+                        <p class="py-6 text-xl">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+                        <button class="btn bg-beautify outline-none font-bold px-8">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
         </header>
     </main>
     <script src="scripts/utility.js"></script>
