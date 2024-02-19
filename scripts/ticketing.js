@@ -36,11 +36,12 @@ function getSeat() {
                 grandTotalText.innerText = totalTicketPrice;
                 //make next btn enable
                 document.getElementById('btn-next').removeAttribute("disabled");
+                
             }else{
                 alert(`You have selected maximum number of seat 4`);
             }
             
-        })
+        },{once:true});
 
     }
 
