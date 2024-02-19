@@ -148,8 +148,8 @@
         <section id="paribahan" class="bg-[#F7F8F8] border-t-[3px] rounded-t-[4rem] border-amber-400">
             <div class=" container mx-auto py-24">
                 <div class=" text-center">
-                    <h1>P.H Parubahan</h1>
-                    <p>Yes, you can run unit tests and view the results directly within the app. The integrated <br>
+                    <h1 class="text-3xl font-bold ">Consumer Paribahan</h1>
+                    <p class="py-6 font-medium">Yes, you can run unit tests and view the results directly within the app. The integrated <br>
                         testing features allow for a streamlined .</p>
                 </div>
                 <div class="w-full">
@@ -421,17 +421,21 @@
                         </div>
                         <!-- <div>BDT <span>00</span></div> -->
                     </div>
-                    <div>
-                        <label for="name">Passenger's Name</label><br>
-                        <input type="text" placeholder="Type here" class="input input-bordered input-accent w-full " />
-                        <label for="number">Phone Number</label><br>
-                        <input type="tel" placeholder="Type here" class="input input-bordered input-accent w-full " />
-                        <label for="name">Email</label><br>
-                        <input type="email" placeholder="Type here" class="input input-bordered input-accent w-full " />
+                    <div class="py-4 space-y-2">
+                        <label for="name" class=" font-medium">Passenger's Name*</label><br>
+                        <input type="text" placeholder="Type your name" class="input input-bordered input-accent w-full " />
+                        <label for="number" class=" font-medium">Phone Number*</label><br>
+                        <input type="tel" placeholder="Type your number" class="input input-bordered input-accent w-full " />
+                        <label for="email" class=" font-medium">Email*</label><br>
+                        <input type="email" placeholder="Type your email" class="input input-bordered input-accent w-full " />
 
                         <!-- <input type="submit" placeholder="Type here"
                             class="input input-bordered bg-amber-400 w-full " /> -->
                         <label for="my_modal_7" onclick="my_modal_1.showModal()" class="btn bg-amber-400 w-full">Next</label>
+                    </div>
+                    <div class="flex justify-center gap-6">
+                        <p class=" underline">Terms and Conditions</p>
+                        <p class=" underline">Cancellation Policy</p>
                     </div>
                 </div>
             </div>
