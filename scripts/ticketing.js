@@ -34,10 +34,8 @@ function getSeat() {
                 //update grand total
                 const grandTotalText = document.getElementById('grand-total-price');
                 grandTotalText.innerText = totalTicketPrice;
-                //apply coupon
-                
-                // const couponField = document.getElementById('coupon-field');
-                // console.log(couponField.value);
+                //make next btn enable
+                document.getElementById('btn-next').removeAttribute("disabled");
             }else{
                 alert(`You have selected maximum number of seat 4`);
             }
