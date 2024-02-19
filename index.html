@@ -377,23 +377,35 @@
                 </div>
                 <div>
                     <h3>Select Your Seat</h3>
-                    <div class="bg-[#F7F8F8] p-6 space-y-3 grid grid-cols-3 w-full">
-                        <div><h3>Seat <span id="current-seat">0</span></h3></div>
-                        <div><h3>Class</h3></div>
-                        <div><h3>Price</h3></div>
-                        <div><h3>C2</h3></div>
-                        <div><h3>eco</h3></div>
-                        <div><h3>550</h3></div>
-                        <div class=" col-span-2">Total Price</div>
-                        <div>BDT <span>00</span></div>
-                        <div class="w-3/4 col-span-3">
+                    <div class="bg-[#F7F8F8] p-6  w-full">
+                        <div class="flex justify-between">
+                            <div id="selected-seat-container">
+                                <h3>Seat <span id="current-seat">0</span></h3>
+                            </div>
+                            <div id="selected-seat-class">
+                                <h3>Class</h3>
+                            </div>
+                            <div id="selected-seat-price">
+                                <h3>Price</h3>
+                            </div>
+                        </div>
+                        <div class=" flex justify-between col-span-3">
+                            <h3>Total Price</h3>
+                            <p>BDT <span id="selected-ticket-price">00</span></p>
+                        </div>
+                        <!-- <div class=" col-span-2"></div>
+                        <div></div> -->
+                        <div id="coupon-container" class="w-full col-span-3 ">
                             <label class="input input-bordered flex items-center gap-2">
-                                <input type="text" class="grow" placeholder="Search" />
-                                <button class="btn bg-amber-400">Apply</button>
+                                <input id="coupon-field" type="text" class="grow" placeholder="Apply Coupon" />
+                                <button onclick="getDiscount()" class="btn bg-amber-400">Apply</button>
                             </label>
                         </div>
-                        <div class=" col-span-2">Grand Total</div>
-                        <div>BDT <span>00</span></div>
+                        <div class="flex justify-between col-span-3">
+                            <h3>Grand Total</h3>
+                            <p>BDT <span id="grand-total-price">00</span></p>
+                        </div>
+                        <!-- <div>BDT <span>00</span></div> -->
                     </div>
                     <div>
                         <label for="name">Passenger's Name</label><br>
