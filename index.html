@@ -179,7 +179,7 @@
                                                 </th>
                                                 <th></th>
                                                 <th class=" text-right">
-                                                    <button class="btn bg-amber-200"><i class="fa-solid fa-couch"></i><span>40</span>seats left</button>
+                                                    <button class="btn bg-amber-200"><i class="fa-solid fa-couch"></i><span id="current-seat-left">40</span>seats left</button>
                                                 </th>
                                             </tr>
                                         </thead>
@@ -247,26 +247,26 @@
                     <div class=" flex items-center space-x-10 my-4">
                         <div><h1>A</h1></div>
                         <div class="grid grid-cols-2 gap-16">
-                            <div class="flex gap-3">
-                                <div><button class="btn lg:w-52">A1</button></div>
-                                <div><button class="btn lg:w-52">A2</button></div>
+                            <div class="flex gap-3 seat-conainter">
+                                <button id="A1" class="btn seat lg:w-52">A1</button>
+                                <button id="A2" class="btn seat lg:w-52">A2</button>
                             </div>
-                            <div class="flex gap-3">
-                                <div><button class="btn lg:w-52">A3</button></div>
-                                <div><button class="btn lg:w-52">A4</button></div>
+                            <div class="flex gap-3 seat-conainter">
+                                <div><button id="A3" class="btn seat lg:w-52">A3</button></div>
+                                <div><button id="A4" class="btn seat lg:w-52">A4</button></div>
                             </div>
                         </div>
                     </div>
                     <div class=" flex items-center space-x-10 my-4">
                         <div><h1>B</h1></div>
                         <div class="grid grid-cols-2 gap-16">
-                            <div class="flex gap-3">
-                                <div><button class="btn lg:w-52">B1</button></div>
-                                <div><button class="btn lg:w-52">B2</button></div>
+                            <div class="flex gap-3 seat-conainter">
+                                <div><button class="btn seat lg:w-52">B1</button></div>
+                                <div><button class="btn seat lg:w-52">B2</button></div>
                             </div>
-                            <div class="flex gap-3">
-                                <div><button class="btn lg:w-52">B3</button></div>
-                                <div><button class="btn lg:w-52">B4</button></div>
+                            <div class="flex gap-3 seat-conainter">
+                                <div><button class="btn seat lg:w-52">B3</button></div>
+                                <div><button class="btn seat lg:w-52">B4</button></div>
                             </div>
                         </div>
                     </div>
@@ -274,12 +274,12 @@
                         <div><h1>C</h1></div>
                         <div class="grid grid-cols-2 gap-16">
                             <div class="flex gap-3">
-                                <div><button class="btn lg:w-52">C1</button></div>
-                                <div><button class="btn lg:w-52">C2</button></div>
+                                <div><button class="btn seat lg:w-52">C1</button></div>
+                                <div><button class="btn seat lg:w-52">C2</button></div>
                             </div>
                             <div class="flex gap-3">
-                                <div><button class="btn lg:w-52">C3</button></div>
-                                <div><button class="btn lg:w-52">C4</button></div>
+                                <div><button class="btn seat lg:w-52">C3</button></div>
+                                <div><button class="btn seat lg:w-52">C4</button></div>
                             </div>
                         </div>
                     </div>
@@ -287,12 +287,12 @@
                         <div><h1>D</h1></div>
                         <div class="grid grid-cols-2 gap-16">
                             <div class="flex gap-3">
-                                <div><button class="btn lg:w-52">D1</button></div>
-                                <div><button class="btn lg:w-52">D2</button></div>
+                                <div><button class="btn seat lg:w-52">D1</button></div>
+                                <div><button class="btn seat lg:w-52">D2</button></div>
                             </div>
                             <div class="flex gap-3">
-                                <div><button class="btn lg:w-52">D3</button></div>
-                                <div><button class="btn lg:w-52">D4</button></div>
+                                <div><button class="btn seat lg:w-52">D3</button></div>
+                                <div><button class="btn seat lg:w-52">D4</button></div>
                             </div>
                         </div>
                     </div>
@@ -300,12 +300,12 @@
                         <div><h1>E</h1></div>
                         <div class="grid grid-cols-2 gap-16">
                             <div class="flex gap-3">
-                                <div><button class="btn lg:w-52">E1</button></div>
-                                <div><button class="btn lg:w-52">E2</button></div>
+                                <div><button class="btn seat lg:w-52">E1</button></div>
+                                <div><button class="btn seat lg:w-52">E2</button></div>
                             </div>
                             <div class="flex gap-3">
-                                <div><button class="btn lg:w-52">E3</button></div>
-                                <div><button class="btn lg:w-52">E4</button></div>
+                                <div><button class="btn seat lg:w-52">E3</button></div>
+                                <div><button class="btn seat lg:w-52">E4</button></div>
                             </div>
                         </div>
                     </div>
@@ -313,12 +313,12 @@
                         <div><h1>F</h1></div>
                         <div class="grid grid-cols-2 gap-16">
                             <div class="flex gap-3">
-                                <div><button class="btn lg:w-52">F1</button></div>
-                                <div><button class="btn lg:w-52">F2</button></div>
+                                <div><button class="btn seat lg:w-52">F1</button></div>
+                                <div><button class="btn seat lg:w-52">F2</button></div>
                             </div>
                             <div class="flex gap-3">
-                                <div><button class="btn lg:w-52">F3</button></div>
-                                <div><button class="btn lg:w-52">F4</button></div>
+                                <div><button class="btn seat lg:w-52">F3</button></div>
+                                <div><button class="btn seat lg:w-52">F4</button></div>
                             </div>
                         </div>
                     </div>
@@ -326,12 +326,12 @@
                         <div><h1>G</h1></div>
                         <div class="grid grid-cols-2 gap-16">
                             <div class="flex gap-3">
-                                <div><button class="btn lg:w-52">G1</button></div>
-                                <div><button class="btn lg:w-52">G2</button></div>
+                                <div><button class="btn seat lg:w-52">G1</button></div>
+                                <div><button class="btn seat lg:w-52">G2</button></div>
                             </div>
                             <div class="flex gap-3">
-                                <div><button class="btn lg:w-52">G3</button></div>
-                                <div><button class="btn lg:w-52">G4</button></div>
+                                <div><button class="btn seat lg:w-52">G3</button></div>
+                                <div><button class="btn seat lg:w-52">G4</button></div>
                             </div>
                         </div>
                     </div>
@@ -339,12 +339,12 @@
                         <div><h1>H</h1></div>
                         <div class="grid grid-cols-2 gap-16">
                             <div class="flex gap-3">
-                                <div><button class="btn lg:w-52">H1</button></div>
-                                <div><button class="btn lg:w-52">H2</button></div>
+                                <div><button class="btn seat lg:w-52">H1</button></div>
+                                <div><button class="btn seat lg:w-52">H2</button></div>
                             </div>
                             <div class="flex gap-3">
-                                <div><button class="btn lg:w-52">H3</button></div>
-                                <div><button class="btn lg:w-52">H4</button></div>
+                                <div><button class="btn seat lg:w-52">H3</button></div>
+                                <div><button class="btn seat lg:w-52">H4</button></div>
                             </div>
                         </div>
                     </div>
@@ -352,12 +352,12 @@
                         <div><h1>I</h1></div>
                         <div class="grid grid-cols-2 gap-16">
                             <div class="flex gap-3">
-                                <div><button class="btn lg:w-52">I1</button></div>
-                                <div><button class="btn lg:w-52">I2</button></div>
+                                <div><button class="btn seat lg:w-52">I1</button></div>
+                                <div><button class="btn seat lg:w-52">I2</button></div>
                             </div>
                             <div class="flex gap-3">
-                                <div><button class="btn lg:w-52">I3</button></div>
-                                <div><button class="btn lg:w-52">I4</button></div>
+                                <div><button class="btn seat lg:w-52">I3</button></div>
+                                <div><button class="btn seat lg:w-52">I4</button></div>
                             </div>
                         </div>
                     </div>
@@ -365,12 +365,12 @@
                         <div><h1>J</h1></div>
                         <div class="grid grid-cols-2 gap-16">
                             <div class="flex gap-3">
-                                <div><button class="btn lg:w-52">J1</button></div>
-                                <div><button class="btn lg:w-52">J2</button></div>
+                                <div><button class="btn seat lg:w-52">J1</button></div>
+                                <div><button class="btn seat lg:w-52">J2</button></div>
                             </div>
                             <div class="flex gap-3">
-                                <div><button class="btn lg:w-52">J3</button></div>
-                                <div><button class="btn lg:w-52">J4</button></div>
+                                <div><button class="btn seat lg:w-52">J3</button></div>
+                                <div><button class="btn seat lg:w-52">J4</button></div>
                             </div>
                         </div>
                     </div>
@@ -378,7 +378,7 @@
                 <div>
                     <h3>Select Your Seat</h3>
                     <div class="bg-[#F7F8F8] p-6 space-y-3 grid grid-cols-3 w-full">
-                        <div><h3>Seat</h3></div>
+                        <div><h3>Seat <span id="current-seat">0</span></h3></div>
                         <div><h3>Class</h3></div>
                         <div><h3>Price</h3></div>
                         <div><h3>C2</h3></div>
@@ -404,7 +404,6 @@
                         <input type="email" placeholder="Type here" class="input input-bordered input-accent w-full " />
 
                         <input type="submit" placeholder="Type here" class="input input-bordered bg-amber-400 w-full " />
-                        
                     </div>
                 </div>
             </div>
